@@ -88,7 +88,7 @@ router.post('/:type?/:version?/tokens', (req, res) => {
 
 // check token
 router.get('/:type?/:version?/tokens', ...jwtAuthorize, (req, res) => {
-  res.status(201).send({ message: 'Token is validated.' })
+  res.status(200).send({ message: 'Token is validated.' })
 })
 
 // delete token
@@ -96,7 +96,7 @@ router.delete('/:type?/:version?/tokens', (req, res) => {
   const token = getTokenFromRequest(req)
   const decoded = jwt.decode(token)
   revokedTokens.push(decoded.uuid)
-  res.status(201).send({ message: 'Revocation token success.' })
+  res.status(200).send({ message: 'Revocation token success.' })
 })
 
 // authorize middlewares
