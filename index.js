@@ -11,6 +11,7 @@ const express = require('express')
 const cors = require('cors')
 const morgan = require('morgan')
 const authorize = require('./authorize')
+const users = require('./users')
 const jsonServer = require('./json-server')
 
 const port = process.env.PORT || 2080
@@ -20,6 +21,7 @@ const app = module.exports = express()
 app.use(cors())
 app.use(morgan('dev'))
 app.use(authorize())
+app.use(users())
 app.use(jsonServer())
 
 if (!module.parent) {
