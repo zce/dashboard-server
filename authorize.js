@@ -19,6 +19,35 @@ const config = require('./config')
 // TODO: Revoked tokens store
 const revokedTokens = []
 
+function getTokenFromRequest (req) {
+  // custom token schema
+  if (!req.headers.authorization) return null
+  const temp = req.headers.authorization.split(' ')
+  const types = ['Bearer', 'JWT']
+  if (types.includes(temp[0])) return temp[1]
+  // return null
+}
+
+const jwtAuthorize = [
+  expressJwt({
+    secret: config.secret,
+    audience: config.audience,
+    issuer: config.issuer,
+    credentialsRequired: false,
+    getToken: getTokenFromRequest,
+    isRevoked (req, payload, done) {
+      // revoke token
+      done(null, revokedTokens.includes(payload.uuid))
+    }
+  }),
+  (req, res, next) => {
+    if (!req.user) return res.status(401).send({ message: 'Requires authentication.' })
+    // TODO: delete token or logout
+    if (req.user.roles.includes('administrator')) return next()
+    res.status(403).send({ message: 'Requires administrator.' })
+  }
+]
+
 const router = new Router()
 
 router.use(bodyParser.urlencoded({ extended: true }))
@@ -58,9 +87,15 @@ router.post('/:type?/:version?/tokens', (req, res) => {
   })
 })
 
+// check token
+router.get('/:type?/:version?/tokens', ...jwtAuthorize, (req, res) => {
+  res.status(201).send({ message: 'Token is validated.' })
+})
+
 // delete token
-router.delete('/:type?/:version?/tokens/:token', (req, res) => {
-  const decoded = jwt.decode(req.params.token)
+router.delete('/:type?/:version?/tokens', (req, res) => {
+  const token = getTokenFromRequest(req)
+  const decoded = jwt.decode(token)
   revokedTokens.push(decoded.uuid)
   res.status(201).send({ message: 'Revocation token success.' })
 })
@@ -70,31 +105,7 @@ const middlewares = [
   // create user token
   router,
   // token validate
-  expressJwt({
-    secret: config.secret,
-    audience: config.audience,
-    issuer: config.issuer,
-    credentialsRequired: false,
-    getToken (req) {
-      // custom token schema
-      if (!req.headers.authorization) return null
-      const temp = req.headers.authorization.split(' ')
-      const types = ['Bearer', 'JWT']
-      if (types.includes(temp[0])) return temp[1]
-      return null
-    },
-    isRevoked (req, payload, done) {
-      // revoke token
-      done(null, revokedTokens.includes(payload.uuid))
-    }
-  }),
-  // user validate
-  (req, res, next) => {
-    if (!req.user) res.status(401).send({ message: 'Requires authentication.' })
-    // TODO: delete token or logout
-    if (req.user.roles.includes('administrator')) return next()
-    res.status(403).send({ message: 'Requires administrator.' })
-  },
+  ...jwtAuthorize,
   // friendly error output
   (err, req, res, next) => {
     if (err.name !== 'UnauthorizedError') return next(err)
