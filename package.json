@@ -1,0 +1,46 @@
+{
+  "name": "api-server",
+  "version": "0.1.0",
+  "description": "Dashboard repo json server",
+  "main": "index.js",
+  "scripts": {
+    "lint": "standard .",
+    "dev": "nodemon .",
+    "start": "node ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zce/api-server.git"
+  },
+  "keywords": [
+    "dashboard",
+    "api",
+    "rest",
+    "rest",
+    "api",
+    "zce",
+    "iceStone",
+    "wedn",
+    "wedn.net"
+  ],
+  "author": "iceStone <ice@wedn.net> (https://github.com/zce)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zce/api-server/issues"
+  },
+  "homepage": "https://github.com/zce/api-server#readme",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "cors": "^2.8.1",
+    "express": "^4.15.2",
+    "express-jwt": "^5.1.0",
+    "json-server": "^0.9.6",
+    "jsonwebtoken": "^7.3.0",
+    "morgan": "^1.8.1",
+    "uuid": "^3.0.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0",
+    "standard": "^9.0.2"
+  }
+}
