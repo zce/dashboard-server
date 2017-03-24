@@ -44,13 +44,13 @@ $ npm run dev
 
 ```
 # create token
-POST /tokens    { username: 'zce', password: 'wanglei' }
+POST /tokens { username: 'zce', password: 'wanglei' }
 
 # check token
-GET /tokens/:token
+GET /tokens { header: { Authorization: 'Bearer <jsonwebtoken>' } }
 
 # revoke token
-DELETE /tokens/:token
+DELETE /tokens { header: { Authorization: 'Bearer <jsonwebtoken>' } }
 ```
 
 

@@ -25,7 +25,6 @@ function getTokenFromRequest (req) {
   const temp = req.headers.authorization.split(' ')
   const types = ['Bearer', 'JWT']
   if (types.includes(temp[0])) return temp[1]
-  // return null
 }
 
 const jwtAuthorize = [
