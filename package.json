@@ -4,7 +4,7 @@
   "description": "Dashboard repo json server",
   "main": "index.js",
   "scripts": {
-    "lint": "standard .",
+    "lint": "standard",
     "dev": "nodemon .",
     "start": "node ."
   },
