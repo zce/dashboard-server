@@ -19,7 +19,7 @@ const port = process.env.PORT || 2080
 const app = module.exports = express()
 
 app.use((req, res, next) => {
-  setTimeout(next, Math.random() * 1000)
+  setTimeout(next, Math.random() * 500)
 })
 
 app.use(cors())
