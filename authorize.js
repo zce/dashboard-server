@@ -25,6 +25,7 @@ function getTokenFromRequest (req) {
   const temp = req.headers.authorization.split(' ')
   const types = ['Bearer', 'JWT']
   if (types.includes(temp[0])) return temp[1]
+  return req.params.token
 }
 
 const jwtAuthorize = [
@@ -92,7 +93,7 @@ router.get('/:type?/:version?/tokens', ...jwtAuthorize, (req, res) => {
 })
 
 // delete token
-router.delete('/:type?/:version?/tokens', (req, res) => {
+router.delete('/:type?/:version?/tokens/:token?', (req, res) => {
   const token = getTokenFromRequest(req)
   const decoded = jwt.decode(token)
   revokedTokens.push(decoded.uuid)
