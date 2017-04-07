@@ -10,6 +10,7 @@
 const express = require('express')
 const cors = require('cors')
 const morgan = require('morgan')
+const delay = require('./delay')
 const authorize = require('./authorize')
 const users = require('./users')
 const jsonServer = require('./json-server')
@@ -18,14 +19,7 @@ const port = process.env.PORT || 2080
 
 const app = module.exports = express()
 
-app.use((req, res, next) => {
-  if (req.method === 'OPTIONS') {
-    // ignore options request
-    return next()
-  }
-  setTimeout(next, Math.random() * 500)
-})
-
+app.use(delay())
 app.use(cors())
 app.use(morgan('dev'))
 app.use(authorize())
