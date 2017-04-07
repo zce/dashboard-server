@@ -54,7 +54,7 @@ router.use(bodyParser.urlencoded({ extended: true }))
 router.use(bodyParser.json())
 
 // create token
-router.post('/:type?/:version?/tokens', (req, res) => {
+router.post('/tokens', (req, res) => {
   const { username, password } = req.body
 
   if (!username || !password) {
@@ -88,12 +88,12 @@ router.post('/:type?/:version?/tokens', (req, res) => {
 })
 
 // check token
-router.get('/:type?/:version?/tokens', ...jwtAuthorize, (req, res) => {
+router.get('/tokens', ...jwtAuthorize, (req, res) => {
   res.status(200).send({ message: 'Token is validated.' })
 })
 
 // delete token
-router.delete('/:type?/:version?/tokens/:token?', (req, res) => {
+router.delete('/tokens/:token?', (req, res) => {
   const token = getTokenFromRequest(req)
   const decoded = jwt.decode(token)
   revokedTokens.push(decoded.uuid)
