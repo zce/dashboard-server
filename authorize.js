@@ -6,7 +6,6 @@
  * http://www.haomou.net/2014/08/13/2014_web_token/
  */
 
-const fs = require('fs')
 const path = require('path')
 const uuid = require('uuid')
 const jwt = require('jsonwebtoken')
@@ -15,6 +14,7 @@ const { Router } = require('express')
 const bodyParser = require('body-parser')
 const expressJwt = require('express-jwt')
 const config = require('./config')
+const utils = require('./utils')
 
 // TODO: Revoked tokens store
 const revokedTokens = []
@@ -61,12 +61,10 @@ router.post('/tokens', (req, res) => {
     return res.status(400).send({ message: 'You must send the username and the password.' })
   }
 
-  fs.readFile(path.join(__dirname, 'database.json'), 'utf-8', (err, content) => {
+  utils.getUsers((err, users) => {
     if (err) {
       return res.status(401).send({ message: 'Incorrect username or password.' })
     }
-
-    const { users } = JSON.parse(content)
 
     const user = users.find(u => u.username === username)
 
