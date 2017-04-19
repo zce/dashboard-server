@@ -6,7 +6,6 @@
  * http://www.haomou.net/2014/08/13/2014_web_token/
  */
 
-const path = require('path')
 const uuid = require('uuid')
 const jwt = require('jsonwebtoken')
 const { omit } = require('lodash')
