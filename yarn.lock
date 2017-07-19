@@ -436,9 +436,16 @@ core-util-is@~1.0.0:
   version "1.0.2"
   resolved "https://registry.npmjs.org/core-util-is/-/core-util-is-1.0.2.tgz#b5fd54220aa2bc5ab57aab7140c940754503c1a7"
 
-cors@^2.3.0, cors@^2.8.3:
+cors@^2.3.0:
   version "2.8.3"
   resolved "http://registry.npm.taobao.org/cors/download/cors-2.8.3.tgz#4cf78e1d23329a7496b2fc2225b77ca5bb5eb802"
+  dependencies:
+    object-assign "^4"
+    vary "^1"
+
+cors@^2.8.4:
+  version "2.8.4"
+  resolved "http://registry.npm.taobao.org/cors/download/cors-2.8.4.tgz#2bd381f2eb201020105cd50ea59da63090694686"
   dependencies:
     object-assign "^4"
     vary "^1"
@@ -471,6 +478,12 @@ debug-log@^1.0.0:
   version "1.0.1"
   resolved "http://registry.npm.taobao.org/debug-log/download/debug-log-1.0.1.tgz#2307632d4c04382b8df8a32f70b895046d52745f"
 
+debug@*, debug@2.6.8, debug@^2.1.1:
+  version "2.6.8"
+  resolved "http://registry.npm.taobao.org/debug/download/debug-2.6.8.tgz#e731531ca2ede27d188222427da17821d68ff4fc"
+  dependencies:
+    ms "2.0.0"
+
 debug@2.2.0, debug@~2.2.0:
   version "2.2.0"
   resolved "https://registry.npmjs.org/debug/-/debug-2.2.0.tgz#f87057e995b1a1f6ae6a4960664137bc56f039da"
@@ -492,12 +505,6 @@ debug@2.6.1, debug@^2.2.0:
 debug@2.6.7:
   version "2.6.7"
   resolved "http://registry.npm.taobao.org/debug/download/debug-2.6.7.tgz#92bad1f6d05bbb6bba22cca88bcd0ec894c2861e"
-  dependencies:
-    ms "2.0.0"
-
-debug@2.6.8, debug@^2.1.1:
-  version "2.6.8"
-  resolved "http://registry.npm.taobao.org/debug/download/debug-2.6.8.tgz#e731531ca2ede27d188222427da17821d68ff4fc"
   dependencies:
     ms "2.0.0"
 
@@ -921,6 +928,13 @@ express-jwt@^5.3.0:
 express-unless@^0.3.0:
   version "0.3.0"
   resolved "https://registry.npmjs.org/express-unless/-/express-unless-0.3.0.tgz#5c795e7392571512dd28f520b3857a52b21261a2"
+
+express-urlrewrite@^1.2.0:
+  version "1.2.0"
+  resolved "http://registry.npm.taobao.org/express-urlrewrite/download/express-urlrewrite-1.2.0.tgz#8e667b7761ff1c7ffdb0efa05d64035387c823eb"
+  dependencies:
+    debug "*"
+    path-to-regexp "^1.0.3"
 
 express@^4.15.3:
   version "4.15.3"
@@ -1562,6 +1576,10 @@ is-utf8@^0.2.0:
   version "0.2.1"
   resolved "https://registry.npmjs.org/is-utf8/-/is-utf8-0.2.1.tgz#4b0da1442104d1b336340e80797e865cf39f7d72"
 
+isarray@0.0.1:
+  version "0.0.1"
+  resolved "http://registry.npm.taobao.org/isarray/download/isarray-0.0.1.tgz#8a18acfca9a8f4177e09abfc6038939b05d1eedf"
+
 isarray@1.0.0, isarray@^1.0.0, isarray@~1.0.0:
   version "1.0.0"
   resolved "https://registry.npmjs.org/isarray/-/isarray-1.0.0.tgz#bb935d48582cba168c06834957a54a3e07124f11"
@@ -1624,9 +1642,9 @@ json-schema@0.2.3:
   version "0.2.3"
   resolved "https://registry.npmjs.org/json-schema/-/json-schema-0.2.3.tgz#b480c892e59a2f05954ce727bd3f2a4e882f9e13"
 
-json-server@^0.10.1:
-  version "0.10.1"
-  resolved "http://registry.npm.taobao.org/json-server/download/json-server-0.10.1.tgz#1edd299681d3960959cf3b1859d192dc19898a40"
+json-server@^0.11.2:
+  version "0.11.2"
+  resolved "http://registry.npm.taobao.org/json-server/download/json-server-0.11.2.tgz#f31b366bd3c540ecebf0cf3e0f4d04c427b21781"
   dependencies:
     body-parser "^1.15.2"
     chalk "^1.1.3"
@@ -1635,6 +1653,7 @@ json-server@^0.10.1:
     cors "^2.3.0"
     errorhandler "^1.2.0"
     express "^4.9.5"
+    express-urlrewrite "^1.2.0"
     json-parse-helpfulerror "^1.0.3"
     lodash "^4.11.2"
     lodash-id "^0.13.0"
@@ -1642,6 +1661,7 @@ json-server@^0.10.1:
     method-override "^2.1.2"
     morgan "^1.3.1"
     object-assign "^4.0.1"
+    please-upgrade-node "^1.0.0"
     pluralize "^3.0.0"
     request "^2.72.0"
     server-destroy "^1.0.1"
@@ -2240,6 +2260,12 @@ path-to-regexp@0.1.7:
   version "0.1.7"
   resolved "https://registry.npmjs.org/path-to-regexp/-/path-to-regexp-0.1.7.tgz#df604178005f522f15eb4490e7247a1bfaa67f8c"
 
+path-to-regexp@^1.0.3:
+  version "1.7.0"
+  resolved "http://registry.npm.taobao.org/path-to-regexp/download/path-to-regexp-1.7.0.tgz#59fde0f435badacba103a84e9d3bc64e96b9937d"
+  dependencies:
+    isarray "0.0.1"
+
 path-type@^1.0.0:
   version "1.1.0"
   resolved "https://registry.npmjs.org/path-type/-/path-type-1.1.0.tgz#59c44f7ee491da704da415da5a4070ba4f8fe441"
@@ -2298,6 +2324,10 @@ pkg-up@^1.0.0:
   resolved "http://registry.npm.taobao.org/pkg-up/download/pkg-up-1.0.0.tgz#3e08fb461525c4421624a33b9f7e6d0af5b05a26"
   dependencies:
     find-up "^1.0.0"
+
+please-upgrade-node@^1.0.0:
+  version "1.0.1"
+  resolved "http://registry.npm.taobao.org/please-upgrade-node/download/please-upgrade-node-1.0.1.tgz#f92dd3443d9797f5742510ea2fd205f811b3b1f7"
 
 pluralize@^1.2.1:
   version "1.2.1"
