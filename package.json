@@ -13,17 +13,13 @@
     "url": "git+https://github.com/zce/api-server.git"
   },
   "keywords": [
-    "dashboard",
     "api",
     "rest",
-    "rest",
-    "api",
+    "rest api",
     "zce",
-    "iceStone",
-    "wedn",
-    "wedn.net"
+    "iceStone"
   ],
-  "author": "iceStone <ice@wedn.net> (https://github.com/zce)",
+  "author": "zce <w@zce.me> (https://zce.me)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/zce/api-server/issues"
@@ -32,15 +28,15 @@
   "dependencies": {
     "body-parser": "^1.17.2",
     "cors": "^2.8.4",
-    "express": "^4.15.3",
+    "express": "^4.15.4",
     "express-jwt": "^5.3.0",
-    "json-server": "^0.11.2",
-    "jsonwebtoken": "^7.4.1",
+    "json-server": "^0.12.0",
+    "jsonwebtoken": "^7.4.3",
     "morgan": "^1.8.2",
     "uuid": "^3.1.0"
   },
   "devDependencies": {
-    "nodemon": "^1.11.0",
-    "standard": "^10.0.2"
+    "nodemon": "^1.12.0",
+    "standard": "^10.0.3"
   }
 }
