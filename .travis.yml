@@ -17,4 +17,4 @@ cache:
 before_script:
 
 script:
-  - npm run lint
+  - yarn lint
