@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "name": "dashboard-server",
+  "routes": [
+    { "src": "*", "dest": "/core/index.js" }
+  ],
+  "builds": [
+    { "src": "core/index.js", "use": "@now/node" }
+  ]
+}

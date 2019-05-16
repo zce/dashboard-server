@@ -23,7 +23,7 @@ $ yarn # or npm install
 modify [database.json](database.json) file
 
 ```sh
-# serve with hot reload at http://localhost:2080
+# serve with hot reload at http://localhost:3000
 $ yarn dev
 ```
 
@@ -35,7 +35,16 @@ $ yarn dev
 
 create token
 
+```shell
+# Content-type: x-www-form-urlencoded
+$ curl -X POST -d "username=zce&password=wanglei" http://localhost:3000/tokens
+# Content-type: application/json
+$ curl -X POST -H "Content-type: application/json" -d "{\"username\":\"zce\",\"password\":\"wanglei\"}" http://localhost:3000/tokens
 ```
+
+request body
+
+```js
 { username: 'zce', password: 'wanglei' }
 ```
 
@@ -43,9 +52,15 @@ create token
 
 check token
 
+```shell
+$ curl -H "Authorization: Bearer <jwt-string>" http://localhost:3000/tokens
 ```
+
+request headers
+
+```js
 {
-  header: { Authorization: 'Bearer <jsonwebtoken>' }
+  headers: { Authorization: 'Bearer <jwt-string>' }
 }
 ```
 
@@ -53,9 +68,33 @@ check token
 
 revoke token
 
+```shell
+$ curl -X DELETE -H "Authorization: Bearer <jwt-string>" http://localhost:3000/tokens
+```
+
+request headers
+
 ```
 {
-  header: { Authorization: 'Bearer <jsonwebtoken>' }
+  headers: { Authorization: 'Bearer <jwt-string>' }
+}
+```
+
+## Additional Endpoints
+
+### GET /users/me
+
+Get current login user information
+
+```shell
+$ curl -H "Authorization: Bearer <jwt-string>" http://localhost:3000/users/me
+```
+
+request headers
+
+```js
+{
+  headers: { Authorization: 'Bearer <jwt-string>' }
 }
 ```
 
