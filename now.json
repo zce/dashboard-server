@@ -2,9 +2,9 @@
   "version": 2,
   "name": "dashboard-server",
   "env": {
-    "SECRET": "@secret",
-    "ISSUER": "@issuer",
-    "AUDIENCE": "@audience"
+    "JWT_SECRET": "@jwt-secret",
+    "JWT_ISSUER": "@jwt-issuer",
+    "JWT_AUDIENCE": "@jwt-audience"
   },
   "routes": [
     { "src": "*", "dest": "/lib/index.js" }
