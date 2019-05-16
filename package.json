@@ -1,6 +1,6 @@
 {
   "name": "dashboard-server",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "A JSON file RESTful API with authorization based on json-server for zce/dashboard",
   "keywords": [
     "rest api",
