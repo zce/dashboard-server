@@ -7,7 +7,7 @@
     "JWT_AUDIENCE": "@jwt-audience"
   },
   "routes": [
-    { "src": "*", "dest": "/lib/index.js" }
+    { "src": "/(.*)", "dest": "/lib/index.js" }
   ],
   "builds": [
     { "src": "lib/index.js", "use": "@now/node" }

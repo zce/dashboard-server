@@ -25,8 +25,7 @@
   "main": "lib/index.js",
   "scripts": {
     "lint": "standard",
-    "dev": "nodemon .",
-    "start": "node ."
+    "dev": "nodemon"
   },
   "dependencies": {
     "dotenv": "^8.0.0",
