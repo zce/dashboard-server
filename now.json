@@ -1,10 +1,15 @@
 {
   "version": 2,
   "name": "dashboard-server",
+  "env": {
+    "SECRET": "@secret",
+    "ISSUER": "@issuer",
+    "AUDIENCE": "@audience"
+  },
   "routes": [
-    { "src": "*", "dest": "/core/index.js" }
+    { "src": "*", "dest": "/lib/index.js" }
   ],
   "builds": [
-    { "src": "core/index.js", "use": "@now/node" }
+    { "src": "lib/index.js", "use": "@now/node" }
   ]
 }
