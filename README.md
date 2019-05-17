@@ -18,12 +18,8 @@ $ cd <my-api-server>
 
 # install dependencies
 $ yarn # or npm install
-```
 
-modify [database.json](database.json) file
-
-```sh
-# serve with hot reload at http://localhost:3000
+# serve with nodemon at http://localhost:3000
 $ yarn dev
 ```
 
