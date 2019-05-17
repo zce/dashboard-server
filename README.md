@@ -31,11 +31,11 @@ $ yarn dev
 
 > with [jsonwebtoken](http://jwt.io)
 
-### POST /tokens
+### POST `/tokens`
 
 create token
 
-```shell
+```sh
 # Content-type: x-www-form-urlencoded
 $ curl -X POST -d "username=zce&password=wanglei" http://localhost:3000/tokens
 # Content-type: application/json
@@ -48,11 +48,11 @@ request body
 { username: 'zce', password: 'wanglei' }
 ```
 
-### GET /tokens
+### GET `/tokens`
 
 check token
 
-```shell
+```sh
 $ curl -H "Authorization: Bearer <jwt-string>" http://localhost:3000/tokens
 ```
 
@@ -64,29 +64,39 @@ request headers
 }
 ```
 
-### DELETE /tokens
+### DELETE `/tokens`
 
 revoke token
 
-```shell
+```sh
 $ curl -X DELETE -H "Authorization: Bearer <jwt-string>" http://localhost:3000/tokens
 ```
 
 request headers
 
-```
+```js
 {
   headers: { Authorization: 'Bearer <jwt-string>' }
 }
 ```
 
+## JSON Server Resources Endpoints
+
+- Comments: `/comments/:id?`
+- Posts: `/posts/:id?`
+- Terms: `/terms/:id?`
+- Users: `/users/:id?`
+- Options: `/options/:id?`
+
+To access and modify resources, you can use any HTTP method: `GET` `POST` `PUT` `PATCH` `DELETE` `OPTIONS`
+
 ## Additional Endpoints
 
-### GET /users/me
+### GET `/users/me`
 
-Get current login user information
+get current login user information
 
-```shell
+```sh
 $ curl -H "Authorization: Bearer <jwt-string>" http://localhost:3000/users/me
 ```
 
@@ -98,13 +108,31 @@ request headers
 }
 ```
 
+## Backdoor Endpoints
+
+### GET `/backdoor/reset`
+
+reset the database to its initial state
+
+```sh
+$ curl http://localhost:3000/backdoor/reset
+```
+
+### GET `/backdoor/delay`
+
+add a delay of 1000ms for each endpoint
+
+```sh
+$ curl http://localhost:3000/backdoor/delay
+```
+
 ## License
 
 [MIT](LICENSE) &copy; [汪磊](http://zce.me)
 
 
 
-[travis-image]: https://img.shields.io/travis/zce/dashboard-server/master.svg
+[travis-image]: https://img.shields.io/travis/zce/dashboard-server.svg
 [travis-url]: https://travis-ci.org/zce/dashboard-server
 [dependency-image]: https://img.shields.io/david/zce/dashboard-server.svg
 [dependency-url]: https://david-dm.org/zce/dashboard-server
