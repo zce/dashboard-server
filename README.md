@@ -122,9 +122,13 @@ add a delay of 1000ms for each endpoint
 $ curl http://localhost:3000/backdoor/delay
 ```
 
+## Related
+
+- [zce/locally-server](https://github.com/zce/locally-server) - A JSON file RESTful API without JWT authorization
+
 ## License
 
-[MIT](LICENSE) &copy; [汪磊](http://zce.me)
+[MIT](LICENSE) &copy; [汪磊](https://zce.me)
 
 
 
