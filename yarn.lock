@@ -938,10 +938,10 @@ eslint-config-standard-jsx@7.0.0:
   resolved "https://registry.npm.taobao.org/eslint-config-standard-jsx/download/eslint-config-standard-jsx-7.0.0.tgz?cache=0&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Feslint-config-standard-jsx%2Fdownload%2Feslint-config-standard-jsx-7.0.0.tgz#05c737d9eab524860fe6853cfd535045c3e07e5b"
   integrity sha1-Bcc32eq1JIYP5oU8/VNQRcPgfls=
 
-eslint-config-standard@13.0.0:
-  version "13.0.0"
-  resolved "https://registry.npm.taobao.org/eslint-config-standard/download/eslint-config-standard-13.0.0.tgz#8032d6fe954f651399763ba4607294aa3c201a23"
-  integrity sha1-gDLW/pVPZROZdjukYHKUqjwgGiM=
+eslint-config-standard@13.0.1:
+  version "13.0.1"
+  resolved "https://registry.npm.taobao.org/eslint-config-standard/download/eslint-config-standard-13.0.1.tgz#c9c6ffe0cfb8a51535bc5c7ec9f70eafb8c6b2c0"
+  integrity sha1-ycb/4M+4pRU1vFx+yfcOr7jGssA=
 
 eslint-import-resolver-node@^0.3.2:
   version "0.3.2"
@@ -3576,13 +3576,13 @@ standard-engine@~10.0.0:
     minimist "^1.1.0"
     pkg-conf "^2.0.0"
 
-standard@13.0.0:
-  version "13.0.0"
-  resolved "https://registry.npm.taobao.org/standard/download/standard-13.0.0.tgz#6d274644938eab627bec972324e4a9b917decc2e"
-  integrity sha1-bSdGRJOOq2J77JcjJOSpuRfezC4=
+standard@13.0.1:
+  version "13.0.1"
+  resolved "https://registry.npm.taobao.org/standard/download/standard-13.0.1.tgz#4d7b140a9e5c9ba40a6708c37800c30aa14c43d6"
+  integrity sha1-TXsUCp5cm6QKZwjDeADDCqFMQ9Y=
   dependencies:
     eslint "~6.0.1"
-    eslint-config-standard "13.0.0"
+    eslint-config-standard "13.0.1"
     eslint-config-standard-jsx "7.0.0"
     eslint-plugin-import "~2.18.0"
     eslint-plugin-node "~9.1.0"
