@@ -283,7 +283,7 @@ boxen@^1.2.1:
     term-size "^1.2.0"
     widest-line "^2.0.0"
 
-boxen@^3.0.0:
+boxen@^3.0.0, boxen@^3.2.0:
   version "3.2.0"
   resolved "https://registry.npm.taobao.org/boxen/download/boxen-3.2.0.tgz#fbdff0de93636ab4450886b6ff45b92d098f45eb"
   integrity sha1-+9/w3pNjarRFCIa2/0W5LQmPRes=
@@ -764,10 +764,10 @@ define-property@^2.0.2:
     is-descriptor "^1.0.2"
     isobject "^3.0.1"
 
-deglob@^3.0.0:
-  version "3.1.0"
-  resolved "https://registry.npm.taobao.org/deglob/download/deglob-3.1.0.tgz#1868193193d3432a5326e8fb2052b439a43a454e"
-  integrity sha1-GGgZMZPTQypTJuj7IFK0OaQ6RU4=
+deglob@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.npm.taobao.org/deglob/download/deglob-4.0.0.tgz#26df218423dceb0d9001583c0b89b51efbb20059"
+  integrity sha1-Jt8hhCPc6w2QAVg8C4m1HvuyAFk=
   dependencies:
     find-root "^1.0.0"
     glob "^7.0.5"
@@ -923,15 +923,15 @@ escape-string-regexp@^1.0.5:
   resolved "https://registry.npm.taobao.org/escape-string-regexp/download/escape-string-regexp-1.0.5.tgz#1b61c0562190a8dff6ae3bb2cf0200ca130b86d4"
   integrity sha1-G2HAViGQqN/2rjuyzwIAyhMLhtQ=
 
-eslint-config-standard-jsx@7.0.0:
-  version "7.0.0"
-  resolved "https://registry.npm.taobao.org/eslint-config-standard-jsx/download/eslint-config-standard-jsx-7.0.0.tgz?cache=0&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Feslint-config-standard-jsx%2Fdownload%2Feslint-config-standard-jsx-7.0.0.tgz#05c737d9eab524860fe6853cfd535045c3e07e5b"
-  integrity sha1-Bcc32eq1JIYP5oU8/VNQRcPgfls=
+eslint-config-standard-jsx@~8.0.0:
+  version "8.0.0"
+  resolved "https://registry.npm.taobao.org/eslint-config-standard-jsx/download/eslint-config-standard-jsx-8.0.0.tgz?cache=0&sync_timestamp=1566246795910&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Feslint-config-standard-jsx%2Fdownload%2Feslint-config-standard-jsx-8.0.0.tgz#62607f2a7c0c47aed46d3a37ad7ebc73b6f7e869"
+  integrity sha1-YmB/KnwMR67UbTo3rX68c7b36Gk=
 
-eslint-config-standard@13.0.1:
-  version "13.0.1"
-  resolved "https://registry.npm.taobao.org/eslint-config-standard/download/eslint-config-standard-13.0.1.tgz?cache=0&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Feslint-config-standard%2Fdownload%2Feslint-config-standard-13.0.1.tgz#c9c6ffe0cfb8a51535bc5c7ec9f70eafb8c6b2c0"
-  integrity sha1-ycb/4M+4pRU1vFx+yfcOr7jGssA=
+eslint-config-standard@~14.0.0:
+  version "14.0.0"
+  resolved "https://registry.npm.taobao.org/eslint-config-standard/download/eslint-config-standard-14.0.0.tgz?cache=0&sync_timestamp=1566246799358&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Feslint-config-standard%2Fdownload%2Feslint-config-standard-14.0.0.tgz#1de7bf5af37542dc6eef879ab7eb5e5e0f830747"
+  integrity sha1-Hee/WvN1Qtxu74eat+teXg+DB0c=
 
 eslint-import-resolver-node@^0.3.2:
   version "0.3.2"
@@ -1421,6 +1421,16 @@ functional-red-black-tree@^1.0.1:
   version "1.0.1"
   resolved "https://registry.npm.taobao.org/functional-red-black-tree/download/functional-red-black-tree-1.0.1.tgz#1b0ab3bd553b2a0d6399d29c0e3ea0b252078327"
   integrity sha1-GwqzvVU7Kg1jmdKcDj6gslIHgyc=
+
+funding@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.npm.taobao.org/funding/download/funding-1.0.0.tgz?cache=0&sync_timestamp=1566246804349&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Ffunding%2Fdownload%2Ffunding-1.0.0.tgz#507b0d2df3fa2e61b2230ca801c73170e4eb38b5"
+  integrity sha1-UHsNLfP6LmGyIwyoAccxcOTrOLU=
+  dependencies:
+    boxen "^3.2.0"
+    chalk "^2.4.2"
+    term-size "^2.1.0"
+    word-wrap "^1.2.3"
 
 gauge@~2.7.3:
   version "2.7.4"
@@ -3596,30 +3606,31 @@ sshpk@^1.7.0:
     safer-buffer "^2.0.2"
     tweetnacl "~0.14.0"
 
-standard-engine@~11.0.1:
-  version "11.0.1"
-  resolved "https://registry.npm.taobao.org/standard-engine/download/standard-engine-11.0.1.tgz#943d710be54537dbedaf8a90367d271f4023fe7c"
-  integrity sha1-lD1xC+VFN9vtr4qQNn0nH0Aj/nw=
+standard-engine@^12.0.0:
+  version "12.0.0"
+  resolved "https://registry.npm.taobao.org/standard-engine/download/standard-engine-12.0.0.tgz?cache=0&sync_timestamp=1566246796425&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fstandard-engine%2Fdownload%2Fstandard-engine-12.0.0.tgz#1643dceba96ca9c04c535a1fb28d79bfb21b3572"
+  integrity sha1-FkPc66lsqcBMU1ofso15v7IbNXI=
   dependencies:
-    deglob "^3.0.0"
+    deglob "^4.0.0"
     get-stdin "^7.0.0"
     minimist "^1.1.0"
     pkg-conf "^3.1.0"
 
-standard@13.1.0:
-  version "13.1.0"
-  resolved "https://registry.npm.taobao.org/standard/download/standard-13.1.0.tgz?cache=0&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fstandard%2Fdownload%2Fstandard-13.1.0.tgz#3de68ac1248d563a445edc806504987a11ea7496"
-  integrity sha1-PeaKwSSNVjpEXtyAZQSYehHqdJY=
+standard@14.0.0:
+  version "14.0.0"
+  resolved "https://registry.npm.taobao.org/standard/download/standard-14.0.0.tgz#72c1bedb9d24e04ab96adde98b44a512dc109d0f"
+  integrity sha1-csG+250k4Eq5at3pi0SlEtwQnQ8=
   dependencies:
     eslint "~6.1.0"
-    eslint-config-standard "13.0.1"
-    eslint-config-standard-jsx "7.0.0"
+    eslint-config-standard "~14.0.0"
+    eslint-config-standard-jsx "~8.0.0"
     eslint-plugin-import "~2.18.0"
     eslint-plugin-node "~9.1.0"
     eslint-plugin-promise "~4.2.1"
     eslint-plugin-react "~7.14.2"
     eslint-plugin-standard "~4.0.0"
-    standard-engine "~11.0.1"
+    funding "^1.0.0"
+    standard-engine "^12.0.0"
 
 static-extend@^0.1.1:
   version "0.1.2"
@@ -3751,6 +3762,11 @@ term-size@^1.2.0:
   integrity sha1-RYuDiH8oj8Vtb/+/rSYuJmOO+mk=
   dependencies:
     execa "^0.7.0"
+
+term-size@^2.1.0:
+  version "2.1.0"
+  resolved "https://registry.npm.taobao.org/term-size/download/term-size-2.1.0.tgz#3aec444c07a7cf936e157c1dc224b590c3c7eef2"
+  integrity sha1-OuxETAenz5NuFXwdwiS1kMPH7vI=
 
 text-table@^0.2.0:
   version "0.2.0"
@@ -4045,6 +4061,11 @@ widest-line@^2.0.0:
   integrity sha1-dDh2RzDsfvQ4HOTfgvuYpTFCo/w=
   dependencies:
     string-width "^2.1.1"
+
+word-wrap@^1.2.3:
+  version "1.2.3"
+  resolved "https://registry.npm.taobao.org/word-wrap/download/word-wrap-1.2.3.tgz#610636f6b1f703891bd34771ccb17fb93b47079c"
+  integrity sha1-YQY29rH3A4kb00dxzLF/uTtHB5w=
 
 wordwrap@~1.0.0:
   version "1.0.0"
