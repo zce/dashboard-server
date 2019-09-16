@@ -1036,10 +1036,10 @@ eslint-visitor-keys@^1.1.0:
   resolved "https://registry.npm.taobao.org/eslint-visitor-keys/download/eslint-visitor-keys-1.1.0.tgz#e2a82cea84ff246ad6fb57f9bde5b46621459ec2"
   integrity sha1-4qgs6oT/JGrW+1f5veW0ZiFFnsI=
 
-eslint@~6.3.0:
-  version "6.3.0"
-  resolved "https://registry.npm.taobao.org/eslint/download/eslint-6.3.0.tgz?cache=0&sync_timestamp=1567194797387&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Feslint%2Fdownload%2Feslint-6.3.0.tgz#1f1a902f67bfd4c354e7288b81e40654d927eb6a"
-  integrity sha1-HxqQL2e/1MNU5yiLgeQGVNkn62o=
+eslint@~6.4.0:
+  version "6.4.0"
+  resolved "https://registry.npm.taobao.org/eslint/download/eslint-6.4.0.tgz#5aa9227c3fbe921982b2eda94ba0d7fae858611a"
+  integrity sha1-WqkifD++khmCsu2pS6DX+uhYYRo=
   dependencies:
     "@babel/code-frame" "^7.0.0"
     ajv "^6.10.0"
@@ -3618,12 +3618,12 @@ standard-engine@^12.0.0:
     minimist "^1.1.0"
     pkg-conf "^3.1.0"
 
-standard@14.2.0:
-  version "14.2.0"
-  resolved "https://registry.npm.taobao.org/standard/download/standard-14.2.0.tgz#7abb64d63095b41c4cd56ef25bbd04f7364af10f"
-  integrity sha1-ertk1jCVtBxM1W7yW70E9zZK8Q8=
+standard@14.3.0:
+  version "14.3.0"
+  resolved "https://registry.npm.taobao.org/standard/download/standard-14.3.0.tgz?cache=0&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fstandard%2Fdownload%2Fstandard-14.3.0.tgz#0c650fba1ee0cdacf109d91c68f3b837507d6d82"
+  integrity sha1-DGUPuh7gzazxCdkcaPO4N1B9bYI=
   dependencies:
-    eslint "~6.3.0"
+    eslint "~6.4.0"
     eslint-config-standard "14.1.0"
     eslint-config-standard-jsx "8.1.0"
     eslint-plugin-import "~2.18.0"
