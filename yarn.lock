@@ -2079,10 +2079,10 @@ nice-try@^1.0.4:
   resolved "https://registry.npm.taobao.org/nice-try/download/nice-try-1.0.5.tgz#a3378a7696ce7d223e88fc9b764bd7ef1089e366"
   integrity sha1-ozeKdpbOfSI+iPybdkvX7xCJ42Y=
 
-nodemon@2.0.0:
-  version "2.0.0"
-  resolved "https://registry.npm.taobao.org/nodemon/download/nodemon-2.0.0.tgz#1c19aa3c668fcf5dddd1121555efb90e315d8edd"
-  integrity sha1-HBmqPGaPz13d0RIVVe+5DjFdjt0=
+nodemon@2.0.1:
+  version "2.0.1"
+  resolved "https://registry.npm.taobao.org/nodemon/download/nodemon-2.0.1.tgz?cache=0&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fnodemon%2Fdownload%2Fnodemon-2.0.1.tgz#cec436f8153ad5d3e6c27c304849a06cabea71cc"
+  integrity sha1-zsQ2+BU61dPmwnwwSEmgbKvqccw=
   dependencies:
     chokidar "^3.2.2"
     debug "^3.2.6"
