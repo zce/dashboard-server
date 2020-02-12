@@ -17,6 +17,5 @@
     { "src": "/", "dest": "/public/index.html" },
     { "src": "/index.html", "status": 301, "headers": { "Location": "/" } },
     { "src": "/(.*)", "dest": "/lib/index.js" }
-  ],
-  "regions": ["icn1", "hnd1"]
+  ]
 }
