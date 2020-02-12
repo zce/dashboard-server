@@ -32,7 +32,7 @@
     "dotenv": "^8.0.0",
     "express-jwt": "^5.3.1",
     "faker": "^4.1.0",
-    "json-server": "^0.15.0",
+    "json-server": "^0.16.0",
     "jsonwebtoken": "^8.5.1",
     "uuid": "^3.3.2"
   },
