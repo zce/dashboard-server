@@ -130,7 +130,7 @@ module.exports.fallbackUsers = [
     name: 'Wang Lei',
     status: 'activated',
     roles: ['administrator'],
-    meta: { avatar: 'https://img.zce.me/faker.svg' }
+    meta: { avatar: 'https://img.zce.me/avatar/faker.svg' }
   },
   {
     slug: 'admin',
@@ -139,7 +139,7 @@ module.exports.fallbackUsers = [
     name: 'Admin',
     status: 'activated',
     roles: ['administrator'],
-    meta: { avatar: 'https://img.zce.me/faker.svg' }
+    meta: { avatar: 'https://img.zce.me/avatar/faker.svg' }
   },
   {
     slug: 'demo',
@@ -148,6 +148,6 @@ module.exports.fallbackUsers = [
     name: 'Demo',
     status: 'forbidden',
     roles: ['administrator'],
-    meta: { avatar: 'https://img.zce.me/faker.svg' }
+    meta: { avatar: 'https://img.zce.me/avatar/faker.svg' }
   }
 ]

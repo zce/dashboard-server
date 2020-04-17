@@ -1,4 +1,4 @@
-const uuid = require('uuid')
+const { v4: uuidv4 } = require('uuid')
 const jsonwebtoken = require('jsonwebtoken')
 
 const config = require('./config')
@@ -39,7 +39,7 @@ const create = (req, res) => {
   }
 
   // TODO: filter user info
-  const payload = { slug: user.slug, uuid: uuid() }
+  const payload = { slug: user.slug, uuid: uuidv4() }
   const token = jsonwebtoken.sign(payload, config.secret, { expiresIn: config.expires, audience: config.audience, issuer: config.issuer })
 
   res.status(201).send({ token })

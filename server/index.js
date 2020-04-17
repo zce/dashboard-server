@@ -32,6 +32,8 @@ const roleAuthorize = (req, res, next) => {
 // Common middlewares
 server.use(jsonServer.defaults())
 server.use(jsonServer.bodyParser)
+
+// Delay
 server.use((req, res, next) => {
   // enable?
   if (!config.enableDelay) return next()

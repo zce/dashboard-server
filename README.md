@@ -139,4 +139,4 @@ $ curl http://localhost:3000/backdoor/delay
 [devdependency-image]: https://img.shields.io/david/dev/zce/dashboard-server.svg
 [devdependency-url]: https://david-dm.org/zce/dashboard-server?type=dev
 [style-image]: https://img.shields.io/badge/code%20style-standard-brightgreen.svg
-[style-url]: http://standardjs.com/
+[style-url]: https://standardjs.com/
