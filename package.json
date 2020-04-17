@@ -22,7 +22,7 @@
     "email": "w@zce.me",
     "url": "https://zce.me"
   },
-  "main": "lib/index.js",
+  "main": "server/index.js",
   "scripts": {
     "lint": "standard",
     "dev": "nodemon"
