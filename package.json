@@ -34,7 +34,7 @@
     "faker": "^4.1.0",
     "json-server": "^0.16.0",
     "jsonwebtoken": "^8.5.1",
-    "uuid": "^7.0.0"
+    "uuid": "^8.0.0"
   },
   "devDependencies": {
     "nodemon": "2.0.3",
