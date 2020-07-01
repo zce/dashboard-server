@@ -30,7 +30,7 @@
   "dependencies": {
     "bson-objectid": "^1.2.5",
     "dotenv": "^8.0.0",
-    "express-jwt": "^5.3.1",
+    "express-jwt": "^6.0.0",
     "faker": "^4.1.0",
     "json-server": "^0.16.0",
     "jsonwebtoken": "^8.5.1",
