@@ -1,5 +1,8 @@
 {
   "version": 2,
+  "alias": [
+    "dashboard-server"
+  ],
   "env": {
     "JWT_SECRET": "@jwt-secret",
     "JWT_ISSUER": "@jwt-issuer",
