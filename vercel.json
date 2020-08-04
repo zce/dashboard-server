@@ -1,7 +1,8 @@
 {
   "version": 2,
   "alias": [
-    "dashboard-server"
+    "dashboard-server",
+    "dashboard-server.now.sh"
   ],
   "env": {
     "JWT_SECRET": "@jwt-secret",
