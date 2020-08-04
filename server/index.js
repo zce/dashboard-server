@@ -1,10 +1,10 @@
 const jsonServer = require('json-server')
 const expressJwt = require('express-jwt')
 
-const config = require('./config')
 const data = require('./data')
 const user = require('./user')
 const token = require('./token')
+const config = require('./config')
 
 const server = jsonServer.create()
 const router = jsonServer.router(data.init())

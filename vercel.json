@@ -1,17 +1,13 @@
 {
-  "name": "dashboard-server",
   "version": 2,
-  "alias": [
-    "dashboard-server"
-  ],
   "env": {
     "JWT_SECRET": "@jwt-secret",
     "JWT_ISSUER": "@jwt-issuer",
     "JWT_AUDIENCE": "@jwt-audience"
   },
   "builds": [
-    { "src": "public/index.html", "use": "@now/static" },
-    { "src": "server/index.js", "use": "@now/node" }
+    { "src": "public/index.html", "use": "@vercel/static" },
+    { "src": "server/index.js", "use": "@vercel/node" }
   ],
   "routes": [
     { "src": "/", "dest": "/public/index.html" },

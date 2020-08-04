@@ -1,9 +1,9 @@
 # dashboard-server
 
-[![Build Status][travis-image]][travis-url]
-[![Dependency Status][dependency-image]][dependency-url]
-[![devDependency Status][devdependency-image]][devdependency-url]
-[![Code Style][style-image]][style-url]
+[![Build Status][travis-img]][travis-url]
+[![Dependency Status][dependency-img]][dependency-url]
+[![devDependency Status][devdependency-img]][devdependency-url]
+[![Code Style][style-img]][style-url]
 
 > A JSON file RESTful API with authorization based on [json-server](https://github.com/typicode/json-server) for [zce/dashboard](https://github.com/zce/dashboard)
 
@@ -132,11 +132,11 @@ $ curl http://localhost:3000/backdoor/delay
 
 
 
-[travis-image]: https://img.shields.io/travis/zce/dashboard-server.svg
-[travis-url]: https://travis-ci.org/zce/dashboard-server
-[dependency-image]: https://img.shields.io/david/zce/dashboard-server.svg
+[travis-img]: https://img.shields.io/travis/com/zce/dashboard-server.svg
+[travis-url]: https://travis-ci.com/zce/dashboard-server
+[dependency-img]: https://img.shields.io/david/zce/dashboard-server.svg
 [dependency-url]: https://david-dm.org/zce/dashboard-server
-[devdependency-image]: https://img.shields.io/david/dev/zce/dashboard-server.svg
+[devdependency-img]: https://img.shields.io/david/dev/zce/dashboard-server.svg
 [devdependency-url]: https://david-dm.org/zce/dashboard-server?type=dev
-[style-image]: https://img.shields.io/badge/code%20style-standard-brightgreen.svg
+[style-img]: https://img.shields.io/badge/code%20style-standard-brightgreen.svg
 [style-url]: https://standardjs.com/
