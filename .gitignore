@@ -1,5 +1,7 @@
-node_modules/
+node_modules
+.vercel
 .env
-.DS_Store
-npm-debug.log*
+package-lock.json
+yarn.lock
+npm-debug.log
 yarn-error.log

@@ -14,6 +14,7 @@ const tokenAuthorize = expressJwt({
   secret: config.secret,
   audience: config.audience,
   issuer: config.issuer,
+  algorithms: ['HS256'],
   credentialsRequired: false,
   getToken: token.getToken,
   isRevoked: (req, payload, done) => done(null, data.isRevokedToken(payload))
